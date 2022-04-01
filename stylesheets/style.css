@@ -1,8 +1,139 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300&display=swap");
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+html,
+body,
+#root,
+#main {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  display: flex;
+  flex-direction: row;
+}
+#dash {
+  width: 500px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#one,
+#two {
+  width: 450px;
+  height: 250px;
+  margin: 30px;
+  border: 3px solid #818589;
+  border-radius: 10px;
+  background-color: #353535;
+  color: #818589;
+}
+#two {
+  margin-top: 0;
+}
+#one:hover {
+  background-color: #414141;
+}
+#two:hover {
+  background-color: #414141;
+}
+#one:active {
+  border: 3px solid rgb(53, 53, 53);
+  color: rgb(53, 53, 53);
+  background-color: rgb(99, 99, 99);
+}
+#two:active {
+  border: 3px solid rgb(53, 53, 53);
+  color: rgb(53, 53, 53);
+  background-color: rgb(99, 99, 99);
+}
+#page_one {
+  height: 100%;
+  width: 81.7%;
+  margin-left: 500px;
+  background-image: url(../images/pikist.jpg);
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#form_page {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 3px solid #353535;
+  border-radius: 20px;
+  background-color: white;
+  opacity: 0.3;
+  box-shadow: 0 0 30px 10px #414141;
+}
+#form_page:hover {
+  opacity: 1;
+  border: 3px solid #353535;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label {
+  width: 600px;
+  margin: 30px 0 30px 0;
+
+  display: flex;
+  align-content: center;
+}
+input {
+  height: 50px;
 }
 
-a {
-  color: #00B7FF;
+#page_two {
+  height: 100%;
+  width: 81.7%;
+
+  margin-left: 500px;
+  background-image: url(../images/pikist.jpg);
+  position: absolute;
+  padding: 30px;
+}
+.toggle {
+  display: none;
+}
+#submit {
+  width: 200px;
+  height: 100px;
+  margin: 30px 0 0 0;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  border: 3px solid #353535;
+  border-radius: 10px;
+}
+#submit:hover {
+  background-image: url(../images/pikist.jpg);
+  background-position: right;
+  color: white;
+}
+#list_one,
+#list_two,
+#list_three {
+  list-style: none;
+  margin: 30px;
+  color: white;
 }
